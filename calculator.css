@@ -24,7 +24,7 @@ body{
 
 .aise-hi{
 
-    position: fixed;
+   
     
    
     
@@ -34,8 +34,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: fit-content;
-    max-width: fit-content;
+    min-height: 100vh;
+    max-width: 100vw;
     
     background-color: black;
     border-radius: 1rem;
@@ -53,8 +53,12 @@ body{
         min-height: 100vh;
     }
     .aise-hi{
-        min-width: 100dvh;
-        max-width: 100dvh;
+        max-width: 120vw;
+        min-height: 100vh;
+    }
+
+    .display-container{
+        text-overflow: ellipsis;
     }
 
    
@@ -77,11 +81,12 @@ button{
 
 .display-container{
     color: #F7F7F2;
-    font-size: 3.7rem;
+    font-size: clamp(1rem,10vh,3.7rem);
     text-align: end;
     
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    
     align-items: center;
     justify-content: end;
     padding-right: 1rem;
@@ -89,6 +94,9 @@ button{
     
     height: 20vh;
     width:100% ;
+    max-width: 100%;
+
+     
     
 }
 
