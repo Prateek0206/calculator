@@ -47,6 +47,25 @@ body{
     
 }
 
+@media (max-width:768px){
+    .main-container{
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+
+    .aise-hi{
+        min-height:100% ;
+        max-width: 100vw;
+        align-content: end;
+    }
+
+    .buttons-container button{
+        max-height: auto;
+       max-width: 100%;
+
+    }
+}
+
 button{
     height: 4rem;
     width: 4rem;
